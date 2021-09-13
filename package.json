@@ -2,17 +2,16 @@
   "name": "ezchat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start app.js"
+    "start": "NODE_PORT=80 pm2 start app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "pm2": "^5.1.1",
     "socket.io": "^4.2.0"
   }
 }
