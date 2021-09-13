@@ -1,0 +1,72 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+#app {
+  width: 90%;
+  margin: 0 auto;
+}
+.chat-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  max-height: 80vh;
+  overflow: auto;
+}
+.message {
+  display: flex;
+  width: 100%;
+}
+.message p:first-child {
+  font-weight: bold;
+}
+.chat-container p {
+  margin: 0;
+}
+.chat-container .user-connected {
+  display: flex;
+  gap: 5px;
+  font-weight: 300;
+  margin: 10px auto;
+}
+.chat-container .user-connected hr {
+  width: 30px;
+}
+.chat-form input {
+  width: auto;
+}
+.chat-form {
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.form-input {
+  flex-grow: 1;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  font-size: 18px;
+}
+.send-btn {
+  width: 10%;
+  max-width: 100px;
+  background-color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
